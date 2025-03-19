@@ -1,0 +1,99 @@
+.settings-container {
+	overflow-x: hidden;
+	max-width: 1200px;
+	padding: 20px;
+	background-color: #000;
+	color: #fff;
+	font-family: sans-serif;
+	height: 100vh;
+ }
+ 
+ .settings-title {
+	font-size: 24px;
+	margin-bottom: 30px;
+ }
+ 
+ .profile-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	background-color: #1c1c1c;
+	padding: 15px;
+	border-radius: 15px;
+ }
+ 
+ .profile-img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+ }
+ 
+ .profile-info {
+	margin-left: 15px;
+ }
+ 
+ .profile-username {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+ }
+ 
+ .change-photo-btn {
+	background-color: #0095f6;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 14px;
+ }
+ 
+ .change-photo-btn:hover {
+	background-color: #007acc;
+ }
+ 
+ .settings-field {
+	margin-bottom: 25px;
+ }
+ 
+ .settings-field label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+ }
+ 
+ .settings-field input,
+ .settings-field select {
+	width: 100%;
+	padding: 10px 12px;
+	background-color: #1c1c1c;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+	outline: none;
+ }
+ 
+ .settings-field input::placeholder {
+	color: #aaa;
+ }
+ 
+ .note-text {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #aaa;
+ }
+ 
+ .bio-wrapper {
+	position: relative;
+ }
+ 
+ .bio-length {
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+	font-size: 12px;
+	color: #aaa;
+ }
+ 
