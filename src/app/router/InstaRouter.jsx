@@ -1,19 +1,18 @@
-import React, { lazy, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router';
 import Layout from '@layout/Layout';
 
-const HomePage = lazy(() => import('@pages/home/Home'))
-const PostsPage = lazy(() => import('@pages/explore/explore'))
-const CreatePage = lazy(() => import('@pages/create/Create'))
-const NotificationsPage = lazy(() => import('@pages/notifications/Notifications'))
-const ReelsPage = lazy(() => import('@pages/reels/Reels'))
-const SettingsPage = lazy(() => import('@pages/settings/Settings'))
-const MessagePage = lazy(() => import('@pages/Message/MessagePage')) 
-const ProfilePage = lazy(() => import('@pages/profile/Profile'))
-const LoginPage = lazy(() => import('@pages/login/Login'))
-const RegisterPage = lazy(() => import('@pages/register/Register'))
-const NotFoundPage = lazy(() => import('@pages/error/NotFound'))
-
+const HomePage = lazy(() => import('@pages/home/Home.jsx'));
+const PostsPage = lazy(() => import('@pages/explore/Explore.jsx'));
+const CreatePage = lazy(() => import('@pages/create/Create.jsx'));
+const NotificationsPage = lazy(() => import('@pages/notifications/Notifications.jsx'));
+const ReelsPage = lazy(() => import('@pages/reels/Reels.jsx'));
+const SettingsPage = lazy(() => import('@pages/settings/Settings.jsx'));
+const MessagePage = lazy(() => import('@pages/message/MessagePage.jsx')); 
+const ProfilePage = lazy(() => import('@pages/profile/Profile.jsx'));
+const LoginPage = lazy(() => import('@pages/login/Login.jsx'));
+const RegisterPage = lazy(() => import('@pages/register/Register.jsx'));
+const NotFoundPage = lazy(() => import('@pages/error/NotFound.jsx'));
 const InstaRouter = () => {
   return (
     <BrowserRouter>
