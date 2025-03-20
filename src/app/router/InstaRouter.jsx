@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import Layout from '@layout/Layout';
 
 const HomePage = lazy(() => import('@pages/home/Home.jsx'));
-const PostsPage = lazy(() => import('@pages/explore/Explore.jsx'));
+const PostsPage = lazy(() => import('@pages/explore/explore.jsx'));
+
 const CreatePage = lazy(() => import('@pages/create/Create.jsx'));
 const NotificationsPage = lazy(() => import('@pages/notifications/Notifications.jsx'));
-const ReelsPage = lazy(() => import('@pages/reels/Reels.jsx'));
+const ReelsPage = lazy(() => import('@pages/reels/reels.jsx'));
 const SettingsPage = lazy(() => import('@pages/settings/Settings.jsx'));
 const MessagePage = lazy(() => import('@pages/message/MessagePage.jsx')); 
 const ProfilePage = lazy(() => import('@pages/profile/Profile.jsx'));
