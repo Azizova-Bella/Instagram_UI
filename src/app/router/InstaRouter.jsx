@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import Layout from '@layout';
-
+import Layout from '@layout/Layout';
 
 const HomePage = lazy(() => import('@pages/home/Home'))
 const PostsPage = lazy(() => import('@pages/explore/explore'))
