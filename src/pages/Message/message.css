@@ -6,11 +6,18 @@
  }
  
  .chat-list {
-	width: 30%;
+	flex: 1;             
+	min-width: 250px;  
 	background-color: #1a1a1a;
 	padding: 20px;
 	overflow-y: auto;
 	border-right: 1px solid #333;
+ }
+ 
+ .chat-box-wrapper,
+ .chat-placeholder {
+	flex: 2;             
+	padding: 20px;
  }
  
  .chat-item {
@@ -26,7 +33,6 @@
  }
  
  .chat-box {
-	width: 70%;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
@@ -76,17 +82,6 @@
 	background-color: #0056b3;
  }
  
- .chat-placeholder {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding: 40px;
-	color: #ccc;
- }
- 
  .chat-placeholder h2 {
 	font-size: 24px;
 	margin-bottom: 10px;
@@ -119,32 +114,30 @@
  .send-message-btn:hover {
 	background-color: #0056b3;
  }
-@media (max-width: 768px) {
-	.chat-box-wrapper {
-	  display: none;
-	}
+ .chat-placeholder {
+	width: 70%;
+	height: 100%; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;  
+	justify-content: center;
+	text-align: center;
+	padding: 40px;
+	color: #ccc;
  }
  
-
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
 	.message-page {
 	  flex-direction: column;
 	}
  
-	.chat-list {
-	  width: 100%;
-	  border-right: none;
-	}
- 
+	.chat-list,
 	.chat-box-wrapper,
 	.chat-placeholder {
 	  width: 100%;
 	}
  
-	.hide-on-mobile {
-	  display: none;
-	}
- 
+	.hide-on-mobile,
 	.hide-chat-list {
 	  display: none;
 	}
